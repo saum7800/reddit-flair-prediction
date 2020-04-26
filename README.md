@@ -62,7 +62,7 @@ Clearly, Google's state-of-the-art Language Model [BERT](https://github.com/goog
 | accuracy           |           |        | 0.67 | 31807   |
 
 
-### Django Application
+### [Django Application](https://github.com/saum7800/reddit-flair-prediction/tree/master/4web_app)
 
 Through the [Django web application](http://34.87.119.42/), you can input a link of the reddit post to the website and get basic information regarding the post along with the predicted Flair. To set up the website on your LocalHost follow these steps:
 
@@ -72,6 +72,8 @@ Through the [Django web application](http://34.87.119.42/), you can input a link
 4. cd to ```reddit-flair-prediction/4web_app/```
 5. install the dependencies of the web app with ```pip install -r requirements.txt```  
 6. run the server with ```python manage.py runserver``` and open the link that comes in the terminal
+
+The App is deployed on Google Cloud Platform. To visit it, you can go [here](http://34.87.119.42/) This has been used in comparison to services like Heroku as the slug size and RAM offered by these services is simply not sufficient enough for a heavy Deep Learning model such as DistilBERT.
 
 ### Automated Testing
 
