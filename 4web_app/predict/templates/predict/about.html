@@ -1,0 +1,25 @@
+{% extends "predict/base.html" %}
+{%block content%}
+    <h1>About This Website</h1>
+    <h3>The website predicts the flair of a given reddit post from the <a href="https://www.reddit.com/r/india">India subreddit</a>.
+    </h3>
+    <p>The website has been trained to predict one of the following 10 most common flairs in the last four years:</p>
+    <div class="container">
+    <ul class="list-group">
+        <li class="list-group-item">Politics</li>
+        <li class="list-group-item">Non-Political</li>
+        <li class="list-group-item">Policy/Economy</li>
+        <li class="list-group-item">Business/Finance</li>
+        <li class="list-group-item">Photography</li>
+        <li class="list-group-item">Coronavirus</li>
+        <li class="list-group-item">Sports</li>
+        <li class="list-group-item">AskIndia</li>
+        <li class="list-group-item">Science/Technology</li>
+        <li class="list-group-item">[R]eddiquette</li>
+    </ul>
+    </div>
+    <p>The dataset used for training the prediction algorithms consists of 100000+ reddit posts.<br>
+    This dataset was trained on various Machine Learning algorithms such as Complement Naive Bayes, SVMs, logistic regression, etc.<br>
+    The highest accuracy was found when the posts were used to fine-tune a pre-trained Neural-Network <a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">BERT</a><br>
+    which was finally deployed on this website. The entire code can be found on this github <a href="#">repo.</p>
+{%endblock content%}

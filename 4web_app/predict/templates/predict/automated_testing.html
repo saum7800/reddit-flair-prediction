@@ -1,0 +1,27 @@
+{% extends "predict/base.html" %}
+
+{% block form %}
+<form method="POST" enctype="multipart/form-data">
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" id="upload_file" name="upload_file">
+        <label class="custom-file-label" for="upload_file">choose file</label>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Predict</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    // following code for name of the file appear on select
+    $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+</script>
+{% endblock form %}
+
+{%block content%}
+{% if render == True %}
+<h3>DONE!!</h3>
+{% endif %}
+{%endblock content%}

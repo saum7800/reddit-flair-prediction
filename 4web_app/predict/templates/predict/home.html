@@ -1,0 +1,33 @@
+{% extends "predict/base.html" %}
+
+{% block form %}
+<form method="POST">
+  {% csrf_token %}
+  <div class="input-group mb-3">
+      <input type="text" name="URL" id="URL" class="form-control" placeholder="enter URL" aria-label="enter URL"
+          aria-describedby="basic-addon2">
+      <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">Predict</button>
+      </div>
+  </div>
+</form>
+{% endblock form %}
+
+{%block content%}
+{% if render == True %}
+<div class="col d-flex justify-content-center">
+  <div class="card text-white bg-{{card_color}} mb-3" style="width: 30rem;">
+    <div class="card-body">
+      <h5 class="card-title text-white">{{ title }}</h5>
+      <p class="card-text">{{ selftext }}</p>
+    </div>
+    <ul class="list-group list-group-flush bg-{{card_color}} mb-3">
+      <li class="list-group-item bg-{{card_color}}">Score:{{ score }}</li>
+      <li class="list-group-item bg-{{card_color}}">Number of comments: {{ num_comments }}</li>
+      <li class="list-group-item bg-{{card_color}}">Flair: {{ flair }}</li>
+      <li class="list-group-item bg-{{card_color}}">Predicted Flair: {{ prediction }}</li>
+    </ul>
+  </div>
+</div>
+{% endif %}
+{%endblock content%}
