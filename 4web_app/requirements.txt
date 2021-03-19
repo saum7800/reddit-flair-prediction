@@ -17,7 +17,7 @@ cycler==0.10.0
 dataclasses==0.7
 decorator==4.4.2
 dill==0.3.1.1
-Django==3.0.5
+Django==3.1.6
 docutils==0.15.2
 fastprogress==0.2.3
 filelock==3.0.12
