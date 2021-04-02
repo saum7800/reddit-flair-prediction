@@ -67,7 +67,7 @@ Clearly, Google's state-of-the-art Language Model [BERT](https://github.com/goog
 Through the [Django web application](http://34.87.119.42/), you can input a link of the reddit post to the website and get basic information regarding the post along with the predicted Flair. To set up the website on your LocalHost follow these steps:
 
 1. Clone this repository and cd to ```reddit-flair-prediction/4web_app/predict```
-2. Download distilbert_predictor_final and distilbert_predictor_final.preproc from [here](https://drive.google.com/open?id=1qv4zsncDvFt07-uIIGCbNVZMWp-GUIQM) and extract it to current folder
+2. Download distilbert_predictor_final.h5 and distilbert_predictor_final.preproc from [here](https://drive.google.com/drive/folders/1Iuxyvt4jQGIEkf20b3tBKOuyYTquVtT8?usp=sharing) and extract it to current folder
 3. make a virual environment 
 4. cd to ```reddit-flair-prediction/4web_app/```
 5. install the dependencies of the web app with ```pip install -r requirements.txt```  
