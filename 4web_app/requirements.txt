@@ -102,7 +102,7 @@ sqlparse==0.3.1
 syntok==1.2.2
 tensorboard==2.4.1
 tensorboard-plugin-wit==1.8.0
-tensorflow==2.4.1
+tensorflow==2.7.2
 tensorflow-datasets==3.0.0
 tensorflow-estimator==2.4.0
 tensorflow-metadata==0.21.2
