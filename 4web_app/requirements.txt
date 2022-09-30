@@ -41,7 +41,7 @@ jedi==0.17.0
 jieba==0.42.1
 Jinja2==2.11.2
 jmespath==0.9.5
-joblib==0.14.1
+joblib==1.2.0
 Keras==2.4.3
 Keras-Applications==1.0.8
 keras-bert==0.86.0
